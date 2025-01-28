@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --font-family: "Kumbh Sans", serif;
+    --font-size: 18px;
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    color: black;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-regular);
+    background-color: var(--dark-cyan);
+    background-image: url(./assets/images/bg-pattern-top.svg), url(./assets/images/bg-pattern-bottom.svg);
+    background-position: left -300px bottom 350px, right -250px top 350px;
+    background-repeat: no-repeat;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 400px;
+    height: auto;
+    width: 400px;
+    margin: 8rem auto;
+    border-radius: 15px;
+    background-color: white; 
+    text-align: center; 
+    padding-bottom: 2rem;
+}
+
+.header-images {
+    position: relative;
+    border-radius: 15px 15px 0 0;
+}
+.header-images .pattern-card {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.header-images .profile-picture {
+    position: absolute;
+    left: 50%;
+    top: 64%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    border: 8px solid white;
+}
+
+.header-texts strong, .main-section li {
+    color: var(--very-dark-desaturated-blue);
+    font-weight: var(--font-weight-bold);
+    font-size: 1.3rem;
+}
+
+.header-texts strong {
+    display: block;
+    margin-top: 5rem;
+}
+
+.header-texts span {
+    color: var(--dark-grayish-blue); 
+    margin-left: 0.5rem;
+    font-weight: var(--font-weight-regular)
+}
+
+.header-texts p {
+    margin-top: 0.5rem;
+    color: var(--dark-gray);
+    font-size: 1rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: rgba(220, 220, 220, 0.685); 
+    margin: 2rem 0; 
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-section .main-section__item{
+    font-size: 0.75rem;
+    color: var(--dark-gray);
+    font-weight: inherit;
+    letter-spacing: 2px;
+    line-height: 2.5;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: white; 
+}
